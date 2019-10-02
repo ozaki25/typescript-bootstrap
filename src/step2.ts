@@ -9,7 +9,14 @@ export function sum(array: number[]) {
 }
 
 export function average(array: number[]) {
-  return 0;
+  if (!array.length) return 0;
+
+  let result = 0;
+  array.forEach(i => {
+    result += i;
+  });
+  result = result / array.length;
+  return result;
 }
 
 export function max(array: number[]) {
