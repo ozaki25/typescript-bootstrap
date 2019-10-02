@@ -2,7 +2,11 @@
 import readInput from './readInput';
 
 export function step1(value: string) {
-  return { [value]: value.length };
+  const result: { [key: string]: number } = {};
+  value.split(' ').forEach((val: string) => {
+    result[val] = val.length;
+  });
+  return result;
 }
 
 (async () => {

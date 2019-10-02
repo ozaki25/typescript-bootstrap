@@ -7,3 +7,7 @@ test('単語ひとつ', () => {
 test('単語ふたつ', () => {
   expect(step1('hello world')).toMatchObject({ hello: 5, world: 5 });
 });
+
+test('漢字', () => {
+  expect(step1('尾崎 勇一')).toMatchObject({ 尾崎: 2, 勇一: 2 });
+});
