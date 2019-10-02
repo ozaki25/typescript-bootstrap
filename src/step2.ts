@@ -1,8 +1,11 @@
-// npx ts-node src/hello.ts
 import readInput from './readInput';
 
 export function sum(array: number[]) {
-  return 0;
+  let result = 0;
+  array.forEach(i => {
+    result += i;
+  });
+  return result;
 }
 
 export function average(array: number[]) {
