@@ -20,7 +20,11 @@ export function average(array: number[]) {
 }
 
 export function max(array: number[]) {
-  return 0;
+  let result = 0;
+  array.forEach(i => {
+    result = result > i ? result : i;
+  });
+  return result;
 }
 
 export function min(array: number[]) {
