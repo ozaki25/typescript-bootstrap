@@ -1,8 +1,8 @@
 // npx ts-node src/hello.ts
 import readInput from './readInput';
 
-export function step1(i: String) {
-  return {};
+export function step1(value: string) {
+  return { [value]: value.length };
 }
 
 (async () => {
